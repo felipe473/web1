@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #e6f2ff;
+            border: 1px solid #99ccff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #99ccff;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #0099ff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <form action="process.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo" required><br>
+        <label for="carrera">Carrera:</label><br>
+        <input type="text" id="carrera" name="carrera" required><br>
+        <label for="codigo">Código:</label><br>
+        <input type="text" id="codigo" name="codigo" required><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
